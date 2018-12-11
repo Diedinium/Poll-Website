@@ -1,3 +1,57 @@
 .HeaderLogo {
     float: initial;
 }
+
+@media only screen and (max-width: 992px) {
+    #logoIcon {
+        display: none;
+    }
+    #logoIcon2 {
+        display: block!important;
+    }
+}
+
+.navbar .nav-item .nav-link .fa {
+    padding-right: 6px;
+    padding-left: 8px;
+}
+
+nav div ul li {
+    margin: 3px 4px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-item.active>.nav-link{
+    border-radius: 3px!important;
+    height: 100%;
+}
+
+.view {
+    background: url("Images/Parliament_at_Sunset.JPG")no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.animated {
+    animation-duration: 2s;
+}
+
+@media only screen and (max-width: 922px) {
+    .view {
+        background-attachment: scroll;
+    }
+}
+
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+footer div .py-5 {
+    padding-bottom: 15px!important;
+    padding-top: 15px!important;
+    
+}
