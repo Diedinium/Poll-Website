@@ -34,10 +34,41 @@ nav div ul li {
     animation-duration: 2s;
 }
 
+.parallax { 
+    /* The image used */
+    background-image: url(Images/Parliament_Inside.jpg);
+  
+    /* Set a height */
+    height: 600px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  div.card.card-img-top {
+        background-position: center;
+        background-size: cover;
+  }
+
 @media only screen and (max-width: 992px) {
     .view {
         background-attachment: scroll;
     }
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+#ToTopButton {
+    display: none;
+    z-index: 1000;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 4rem;
 }
 
 html,
@@ -51,4 +82,8 @@ footer div .py-5 {
     padding-bottom: 15px!important;
     padding-top: 15px!important;
     
+}
+
+footer div.col-md-12 div.footer-copyright {
+    background-color: #1565c0!important;
 }
