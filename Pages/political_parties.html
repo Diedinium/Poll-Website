@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../main.css">
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="../script.js"></script>
+    
 </head>
 <body>
     <!-- Nav bar -->
@@ -85,6 +85,216 @@
 
     <main class="text-center pt-5">
 
+        <!-- Content that is hidden by default, shown via jQuery when buttons are clicked. -->
+
+        <div class="container text-left" id="HiddenElement1">
+            <a class="btn btn-indigo" id="BtnHide1" data-aos="flip-left"><i class="fa fa-arrow-left mr-2"></i>Return</a>
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <div data-aos="fade-up">
+                        <img class="img-responsive mx-auto" style="max-width: 450px;" src="../Images/Conservative_logo3.png" alt="Conservatives logo">
+                        <h1 class="pt-5">The Conservatives</h1>
+                        <br>
+                        <p class="mb-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End of hidden Content section-->
+
+        <div class="container" id="HideContent1">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div data-aos="fade-up">
+                        <h2 class="font-weight-bold" >The parties on offer</h2>
+                        <br>
+                        <p class="mb-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Political Party Information Cards -->
+        <div class="container mb-5" id="HideContent2">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 mb-3" data-aos="flip-left">
+                        <!-- Conservatives Card -->
+                            <div class="card card-img-top rounded h-100" style="background-image: url(../Images/Conservative_Logo2.jpg);">
+        
+                                <!-- Content -->
+                                <div class="text-white text-center d-flex align-items-stretch rgba-black-strong py-5 px-4 rounded h-100">
+                                    <div>
+                                        <h3 class="card-title pt-2"><strong>Conservatives</strong></h3>
+                                        <p>
+                                            The conservatives are one of the major UK political parties, they currently hold a majority in the house of Commons and have 
+                                            been in power since 2010. Click expand to read more.
+                                        </p>
+                                        <a class="btn btn-indigo" id="BtnExpand1"><i class="fa fa-clone left mr-2"></i>Expand</a>
+                                    </div>
+                                </div>
+                                <!-- Content -->
+                            </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="col-md-6 col-sm-12 mb-3" data-aos="flip-right">
+                        <!-- Labour Card -->
+                        <div class="card card-img-top rounded h-100" style="background-image: url(../Images/Labour_logo2.png);">
+        
+                            <!-- Content -->
+                            <div class="text-white text-center d-flex align-items-stretch rgba-black-strong py-5 px-4 rounded h-100">
+                                <div>
+                                    <h3 class="card-title pt-2"><strong>Labour</strong></h3>
+                                    <p>
+                                        Follow the below link to learn more about our voting system, including how and why it works.
+                                    </p>
+                                    <a class="btn btn-indigo" id="BtnExpand2"><i class="fa fa-clone left mr-2"></i>Expand</a>
+                                </div>
+                            </div>
+                            <!-- Content -->
+                        </div>
+                    <!-- Card -->
+                    </div>
+                    <div class="col-md-6 col-sm-12 mb-3" data-aos="flip-left">
+                            <!-- Liberal Democrats Card -->
+                                <div class="card card-img-top rounded h-100" style="background-image: url(../Images/LiberalDemocrats_logo2.png);">
+            
+                                    <!-- Content -->
+                                    <div class="text-white text-center d-flex align-items-stretch rgba-black-strong py-5 px-4 rounded h-100">
+                                        <div>
+                                            <h3 class="card-title pt-2"><strong>Liberal Democrats</strong></h3>
+                                            <p>
+                                                Follow the below link to learn more about our government and how it works.
+                                            </p>
+                                            <a class="btn btn-indigo" id="BtnExpand3"><i class="fa fa-clone left mr-2"></i>Expand</a>
+                                        </div>
+                                    </div>
+                                    <!-- Content -->
+                                </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="col-md-6 col-sm-12 mb-3" data-aos="flip-right">
+                            <!-- UKIP Card -->
+                                <div class="card card-img-top rounded h-100" style="background-image: url(../Images/UKIP_logo2.jpg);">
+            
+                                    <!-- Content -->
+                                    <div class="text-white text-center d-flex align-items-stretch rgba-black-strong py-5 px-4 rounded h-100">
+                                        <div>
+                                            <h3 class="card-title pt-2"><strong>UKIP</strong></h3>
+                                            <p>
+                                                Follow the below link to learn more about our government and how it works.
+                                            </p>
+                                            <a class="btn btn-indigo" id="BtnExpand4"><i class="fa fa-clone left mr-2"></i>Expand</a>
+                                        </div>
+                                    </div>
+                                    <!-- Content -->
+                                </div>
+                            <!-- Card -->
+                    </div>
+                    <div class="col-md-6 col-sm-12 mb-3" data-aos="flip-left">
+                            <!-- Greens Card -->
+                                <div class="card card-img-top rounded h-100" style="background-image: url(../Images/Greens_logo2.jpg);">
+            
+                                    <!-- Content -->
+                                    <div class="text-white text-center d-flex align-items-stretch rgba-black-strong py-5 px-4 rounded h-100">
+                                        <div>
+                                            <h3 class="card-title pt-2"><strong>Greens</strong></h3>
+                                            <p>
+                                                Follow the below link to learn more about our government and how it works.
+                                            </p>
+                                            <a class="btn btn-indigo" id="BtnExpand5"><i class="fa fa-clone left mr-2"></i>Expand</a>
+                                        </div>
+                                    </div>
+                                    <!-- Content -->
+                                </div>
+                            <!-- Card -->
+                    </div>
+                    <div class="col-md-6 col-sm-12 mb-3" data-aos="flip-right">
+                            <!-- SNP Card -->
+                                <div class="card card-img-top rounded h-100" style="background-image: url(../Images/SNP_logo2.jpg);">
+            
+                                    <!--Content -->
+                                    <div class="text-white text-center d-flex align-items-stretch rgba-black-strong py-5 px-4 rounded h-100">
+                                        <div>
+                                            <h3 class="card-title pt-2"><strong>SNP</strong></h3>
+                                            <p>
+                                                Follow the below link to learn more about our government and how it works.
+                                            </p>
+                                            <a class="btn btn-indigo" id="BtnExpand6" ><i class="fa fa-clone left mr-2"></i>Expand</a>
+                                        </div>
+                                    </div>
+                                    <!-- Content -->
+                                </div>
+                            <!-- Card -->
+                    </div>
+            </div>
+        </div>
+
+            <div class="parallax" style="background-image: url(../Images/Voting.jpg);"">
+                    <div class="mask rgba-black-strong flex-center">
+                        <div class="container text-center white-text">
+                            <div class="white-text text-center" data-aos="fade-up">
+                                <h1 class="font-weight-bold">Who should I vote for?</h1>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="container pt-5">
+                <div class="row">
+                    <div class="col-md-12" data-aos="fade-up">
+                        <div data-aos="fade-up">
+                            <h2 class="font-weight-bold" >A quick answer: It's up to you.</h2>
+                            <br>
+                            <h4>
+                                Seriously, don't let others influence your decision. It should always be your own!
+                            </h4>
+                            <br>
+                            <p class="mb-3">
+                                If there is ever a politically themed site that is telling you why you should be voting for a certain party, then it's either 
+                                the parties main website, or is biased. That's the main message to leave this page with, based on the information about the parties above make 
+                                your own informed decion about who you want to vote for. Have a think about the choice you make and see if any of these factors are influcencing 
+                                your decision:
+                            </p>
+                            <ul class="list-unstyled grey-text lead">
+                                <li class="py-1"> 
+                                    <em>Your parents are voting for the one party, so you are as well.</em>
+                                </li>
+                                <li class="py-1">
+                                    <em>The party you're voting for is certain to win in your area.</em>
+                                </li>
+                                <li class="py-1">
+                                    <em>You're voting the same way as your friends.</em>
+                                </li>
+                                <li class="py-1">
+                                    <em>You are worried about the repurcussions of voting for a certain party.</em>
+                                </li>
+                                <li class="py-1">
+                                    <em>Someone is threatening you if you don't vote for a certain party.</em>
+                                </li>
+                            </ul>
+                            <p>
+                                If any of these are having an effect on the way you vote, then reconsider your choice, don't let others influence your vote unfairly, the decision needs to be 
+                                your own. Remember...
+                            </p>
+                            <h2 class="mb-5">Your vote, your choice!</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </main>
 
     <a onclick="topFunction()" id="ToTopButton" class="btn btn-elegant"><i class="fa fa-arrow-up left"></i> Return to top</a>
@@ -135,13 +345,15 @@
                 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
                 <!-- MDB core JavaScript -->
                 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.16/js/mdb.min.js"></script>
+                <!-- Main Self-made scripts -->
+                <script src="../script.js"></script>
     </footer>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             AOS.init({
                 duration: 600,
                 once: true,
-                anchorPlacement: 'center-bottom',
+                anchorPlacement: 'top-bottom',
             });
         </script>
 </body>

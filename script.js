@@ -14,3 +14,22 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+//Political Parties Page Expand/Close script.
+var idClicked;
+$(document).ready(function() {
+  $("#HiddenElement1").hide();
+  $("a.btn").click(function(e) {
+    idClicked = e.target.id;
+    ExpandShrinkContent();
+  });
+
+  function ExpandShrinkContent() {
+    if (idClicked == "BtnExpand1") {
+      $("#HideContent1").hide();
+      $("#HideContent2").hide();
+      $("#HiddenElement1").fadeIn(800);
+      AOS.refresh();
+    }
+  }
+});
