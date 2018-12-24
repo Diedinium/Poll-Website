@@ -94,7 +94,7 @@ div.card.card-img-top {
             right: -12px;
             background-color: #1565c0;
             border: 3px solid #1565c0;
-            top: 40px;
+            top: 41px;
             border-radius: 50%;
             z-index: 10;
             box-shadow:2px 2px 15px rgb(156, 156, 156);
@@ -197,7 +197,7 @@ div.card.card-img-top {
         background-attachment: scroll;
     }
     div.col-md-12 div iframe {
-        height: 400px;
+        height: 350px;
     }
 }
 

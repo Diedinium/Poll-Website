@@ -55,3 +55,22 @@ function ShowModal(idClicked) {
   
 }
 //Political Parties Modals JavaScript end
+
+//Detect IE javascript
+function isIE() {
+  ua = navigator.userAgent;
+  //MSIE used to detect old browsers and Trident used to newer ones
+  var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
+  
+  return is_ie; 
+}
+
+window.onload = function () {
+  if (localStorage.getItem("hasCodeRunBefore") === null) {
+      if (isIE()){
+        alert('This website is not designed for Internet Explorer compatibility, you will experience layout and functionality issues. Please upgrade to a more recent browser such as Chrome, Edge or Firefox for the best experience.');
+      }
+      localStorage.setItem("hasCodeRunBefore", true);
+  }
+}
+//Detect IE javascript end
