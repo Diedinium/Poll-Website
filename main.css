@@ -68,7 +68,7 @@ div.card.card-img-top {
             content: '';
             position: absolute;
             width: 3px;
-            background-color: #5f5f5f31;
+            background-color: rgba(0, 0, 0, 0.26);
             top: 0;
             bottom: 0;
             left: 50%;
