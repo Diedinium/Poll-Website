@@ -1,40 +1,53 @@
 
-
+/* Media query that hides/shows two different elements when the screen width is less than 992px */
 @media only screen and (max-width: 992px) {
+    /* Hides the main icon */
     #logoIcon {
         display: none;
     }
+    /* Shows a secondary smaller icon when in mobile view */
     #logoIcon2 {
         display: block!important;
     }
 }
 
+/* Adds a larger amount of padding to all navbar icons, resulting in them being spaced further apart */
 .navbar .nav-item .nav-link .fa {
     padding-right: 6px;
     padding-left: 8px;
 }
 
+/* Adds space and rounded edges to the navbar buttons, also aligns the text to centre */
 nav div ul li {
     margin: 3px 4px;
     border-radius: 3px;
     text-align: center;
 }
 
+/* Whenver a button is set as active via CSS, ensures that it's borders matches with the button */
 .navbar.navbar-dark .navbar-nav .nav-item.active>.nav-link{
     border-radius: 3px!important;
     height: 100%;
 }
 
+/* Part of the intro image, sets it as a background attachment for the Parallax effect */
 .view {
     background: url("Images/Parliament_at_Sunset.JPG")no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
 }
 
+/* Bootstrap animation class, changes the animation length to be longer than default. */
 .animated {
     animation-duration: 2s;
 }
 
+/* Sets iframes to have no borders */
+iframe {
+    border: none;
+}
+
+/* The main parallax class, fixes the background image as an attachment, ensuring a Parallax effect. Also sets the height */
 .parallax { 
     /* The image used */
     background-image: url(Images/Parliament_Inside.jpg);
@@ -49,12 +62,13 @@ nav div ul li {
     background-size: cover;
   }
 
+/* Centres and makes the images used in cards cover the entire element */
 div.card.card-img-top {
     background-position: center;
     background-size: cover;
 }
 
-/* Timeline CSS (With help from W3Schools */
+/* Timeline CSS (With help from W3Schools, although heavily modified */
     /* The actual timeline (the vertical ruler) */
         /* The actual timeline (the vertical ruler) */
         .timeline {
@@ -189,6 +203,7 @@ div.card.card-img-top {
         }
 /* Timeline CSS end */
 
+/* Media queries for mobile compatibility, disable parallax effect */
 @media only screen and (max-width: 992px) {
     .view {
         background-attachment: scroll;
@@ -201,6 +216,7 @@ div.card.card-img-top {
     }
 }
 
+/* Styles the return to top button */
 #ToTopButton {
     display: none;
     z-index: 1000;
@@ -210,6 +226,7 @@ div.card.card-img-top {
     border-radius: 4rem;
 }
 
+/* Sets the main intro image to always take up 100% of the screen height upon load */
 html,
 body,
 header,
@@ -217,12 +234,14 @@ header,
   height: 100%;
 }
 
+/* Adds custom spacing to footer div elements */
 footer div .py-5 {
     padding-bottom: 15px!important;
     padding-top: 15px!important;
     
 }
 
+/* Sets the bottom "copyright" bar on the footer to a darker colour. */
 footer div.col-md-12 div.footer-copyright {
     background-color: #1565c0!important;
 }
