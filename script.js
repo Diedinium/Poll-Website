@@ -65,6 +65,7 @@ function isIE() {
   return is_ie; 
 }
 
+//Function that displays an alert if user is using IE, checks if this warning has already been displayed before doing so.
 window.onload = function () {
   if (localStorage.getItem("hasCodeRunBefore") === null) {
       if (isIE()){
