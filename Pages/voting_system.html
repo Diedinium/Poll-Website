@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Sets the title of the page on the tab -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#1565c0">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1565c0">
     <title>Poll</title>
     <!-- Sets the website icon -->
     <link rel="icon" href="../Images/check-mark-2-128.png">
@@ -21,11 +22,12 @@
     <link rel="stylesheet" href="../main.css">
     <!-- Linking in the Animate on Scroll library -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-        
+
 </head>
+
 <body>
     <!-- Nav bar -->
-    <header> 
+    <header>
         <!-- Creates the main navbar, defines colour, fixes it to top. -->
         <nav class="navbar navbar-expand-lg navbar-dark blue darken-3 fixed-top" style="display: block;">
             <!-- Creates the main icon logo -->
@@ -35,49 +37,62 @@
             <!-- Container for the main navbar content -->
             <div class="container">
                 <!-- Sets the navbar icon when in mobile view -->
-                <a class="navbar-brand" id="logoIcon2" href="#" style="display: none;"><img src="../Images/PollLogo.png" alt="logoimage" class="navbar-brand" height="50"></a>
-                
+                <a class="navbar-brand" id="logoIcon2" href="#" style="display: none;"><img src="../Images/PollLogo.png"
+                        alt="logoimage" class="navbar-brand" height="50"></a>
+
                 <!-- Components that make the navbar scaleable, creates a button when in mobile view -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07"
+                    aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                
+
                 <!-- Main navbar links -->
                 <div class="collapse navbar-collapse" id="navbarsExample07">
-                <!-- Unordered list styled to sit inline -->
-                <ul class="navbar-nav mr-auto">
-                    <!-- List items styled as buttons with links, colour modified by style component  -->
-                    <!-- Active navbar item uses "Active" class to make it lighter -->
-                    <li class="nav-item blue darken-4" style="background-color: rgba(38, 84, 235, 0.603)!important;">
-                        <a class="nav-link" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item red darken-1" style="background-color: rgba(228, 10, 10, 0.603)!important;">
-                        <a class="nav-link" href="../Pages/government.html">Government</a>
-                    </li>
-                    <li class="nav-item purple darken-1 active" style="background-color: rgba(112, 16, 156, 0.603)!important;">
-                        <a class="nav-link" href="#">Voting System</a>
-                    </li>
-                    
-                    <li class="nav-item green darken-1" style="background-color: rgba(15, 158, 22, 0.603)!important;">
-                        <a class="nav-link" href="../Pages/political_parties.html">Political Parties</a>
-                    </li>
-                    <li class="nav-item yellow darken-3" style="background-color: rgba(238, 130, 6, 0.719)!important;">
-                        <a class="nav-link" href="../Pages/Who_Can_Vote.html">Who can vote?</a>  
-                    </li>
-                    
-                </ul>
-                <!-- Second UL element that contains the two secondary navbar links -->
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.gov.uk/register-to-vote" target="_blank" rel="noopener"><div>Register to Vote guide<i class="fa fa-check-square fa-lg mx-2" aria-hidden="true"></i></div> </a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" target="#" rel="noopener"><div>Our Facebook Page<i class="fa fa-facebook-square fa-lg mx-2" aria-hidden="true"></i></div></a>
-                    </li>
-                </ul>
+                    <!-- Unordered list styled to sit inline -->
+                    <ul class="navbar-nav mr-auto">
+                        <!-- List items styled as buttons with links, colour modified by style component  -->
+                        <!-- Active navbar item uses "Active" class to make it lighter -->
+                        <li class="nav-item blue darken-4"
+                            style="background-color: rgba(38, 84, 235, 0.603)!important;">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item red darken-1" style="background-color: rgba(228, 10, 10, 0.603)!important;">
+                            <a class="nav-link" href="../Pages/government.html">Government</a>
+                        </li>
+                        <li class="nav-item purple darken-1 active"
+                            style="background-color: rgba(112, 16, 156, 0.603)!important;">
+                            <a class="nav-link" href="#">Voting System</a>
+                        </li>
 
-                
+                        <li class="nav-item green darken-1"
+                            style="background-color: rgba(15, 158, 22, 0.603)!important;">
+                            <a class="nav-link" href="../Pages/political_parties.html">Political Parties</a>
+                        </li>
+                        <li class="nav-item yellow darken-3"
+                            style="background-color: rgba(238, 130, 6, 0.719)!important;">
+                            <a class="nav-link" href="../Pages/Who_Can_Vote.html">Who can vote?</a>
+                        </li>
+
+                    </ul>
+                    <!-- Second UL element that contains the two secondary navbar links -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.gov.uk/register-to-vote" target="_blank"
+                                rel="noopener">
+                                <div>Register to Vote guide<i class="fa fa-check-square fa-lg mx-2"
+                                        aria-hidden="true"></i></div>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" target="#" rel="noopener">
+                                <div>Our Facebook Page<i class="fa fa-facebook-square fa-lg mx-2"
+                                        aria-hidden="true"></i></div>
+                            </a>
+                        </li>
+                    </ul>
+
+
                 </div>
             </div>
         </nav>
@@ -91,9 +106,10 @@
                         <!-- Text content, with intro title and sub-text -->
                         <div class="white-text text-center wow fadeInUp animated">
                             <h1 class="font-weight-bold">How does the voting system in the UK work?</h1>
-                                <h5>This page will provide an overview of how voting in the UK works, including a timeline of what happens once an election is declared.</h5>
-                                <br>
-                                <i class="fa fa-angle-double-down fa-5x"></i>
+                            <h5>This page will provide an overview of how voting in the UK works, including a timeline
+                                of what happens once an election is declared.</h5>
+                            <br>
+                            <i class="fa fa-angle-double-down fa-5x"></i>
                         </div>
                     </div>
                 </div>
@@ -105,340 +121,402 @@
     <main class="text-center pt-5">
         <!-- Information before timeline -->
         <div class="container">
-                <!-- Setting row -->
-                <div class="row">
-                    <!-- Setting column -->
-                    <div class="col-md-12">
-                        <!-- Setting animation -->
-                        <div data-aos="fade-up">
-                            <!-- Content -->
-                            <h2 class="font-weight-bold" >How voting works, a timeline.</h2>
-                            <br>
-                            <p class="mb-5">
-                                On this page we first need to take a look at how voting works from the point of view of the public, what steps are involved in an election and which of these matter to you?
-                                In the following outline the steps of a typical election are shown, to help simplify the voting process.
-                            </p>
-                            <!-- Content end -->
-                        </div>
+            <!-- Setting row -->
+            <div class="row">
+                <!-- Setting column -->
+                <div class="col-md-12">
+                    <!-- Setting animation -->
+                    <div data-aos="fade-up">
+                        <!-- Content -->
+                        <h2 class="font-weight-bold">How voting works, a timeline.</h2>
+                        <br>
+                        <p class="mb-5">
+                            On this page we first need to take a look at how voting works from the point of view of the
+                            public, what steps are involved in an election and which of these matter to you?
+                            In the following outline the steps of a typical election are shown, to help simplify the
+                            voting process.
+                        </p>
+                        <!-- Content end -->
                     </div>
                 </div>
             </div>
-    
-            <!-- End of information before timeline-->
+        </div>
 
-            <!-- Timeline section -->
-            <!-- Container and margin bottom set -->
-            <div class="container mb-5">
-                <!-- Setting up the timeline container -->
-                <div class="timeline">
-                    <!-- A left side timeline item, animates in from the left -->
-                    <div class="timecontainer timeleft" data-aos="flip-left">
-                        <!-- Sets a container for the timeline item content, also generates a ::before and ::after element -->
-                        <div class="timecontent" >
-                            <!-- Timeline item content, with padding and coloured heading section -->
-                            <h2 class="px-5 py-4 mb-3 blue darken-3 white-text rounded-top">Election Declared</h2>
-                            <p class="pb-4 pl-5 pr-5">
-                                The first step for any election is that it is declared; this happens in a number of ways. The first is via the maximum term time before an election 
-                                must be held, which is 5 years, or a "snap" election is held which can be called at any time, typically to take advantage of a unique circumstance or to
-                                resolve a pressing issue.
-                            </p>
-                            <!-- End of Timeline item content -->
-                            <!-- This style employed for all other left side timeline items -->
-                        </div>
+        <!-- End of information before timeline-->
+
+        <!-- Timeline section -->
+        <!-- Container and margin bottom set -->
+        <div class="container mb-5">
+            <!-- Setting up the timeline container -->
+            <div class="timeline">
+                <!-- A left side timeline item, animates in from the left -->
+                <div class="timecontainer timeleft" data-aos="flip-left">
+                    <!-- Sets a container for the timeline item content, also generates a ::before and ::after element -->
+                    <div class="timecontent">
+                        <!-- Timeline item content, with padding and coloured heading section -->
+                        <h2 class="px-5 py-4 mb-3 blue darken-3 white-text rounded-top">Election Declared</h2>
+                        <p class="pb-4 pl-5 pr-5">
+                            The first step for any election is that it is declared; this happens in a number of ways.
+                            The first is via the maximum term time before an election
+                            must be held, which is 5 years, or a "snap" election is held which can be called at any
+                            time, typically to take advantage of a unique circumstance or to
+                            resolve a pressing issue.
+                        </p>
+                        <!-- End of Timeline item content -->
+                        <!-- This style employed for all other left side timeline items -->
                     </div>
-                    <!-- A right side timeline item, animates in from the left is only difference to a right side one, pattern repeats for all other right side timeline items -->
-                    <div class="timecontainer timeright" data-aos="flip-right">
-                        <div class="timecontent">
-                            <h2 class="px-5 py-4 mb-3 blue darken-3 white-text rounded-top">Date announced</h2>
-                            <p class="pb-4 pl-5 pr-5">
-                                At the same time as an election being declared, or shortly afterwards, the date that voting takes place on will be announced. This is the important 
-                                date to remember; unless you are voting by mail, it is the only day you will be able to cast your ballot on.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Left side timeline item -->
-                    <div class="timecontainer timeleft" data-aos="flip-left">
-                        <div class="timecontent" >
-                            <h2 class="px-5 py-4 mb-3 blue darken-3 white-text rounded-top">Campaigning</h2>
-                            <p class="pb-4 pl-5 pr-5">
-                                Next a period of campaigning will follow from the parties vying for seats and power within the next government. This typically occurs in the form of 
-                                election promises and an "election manifesto", we recommend taking a brief read on the highlights from the manifesto's that the parties put forward, as this 
-                                is the best way to get an unfiltered look into what each party is promising. This campainging can take place up until a week before the election date.
-                            </p>
-                        </div>
-                    </div>  
-                    <!-- Right side timeline item -->
-                    <div class="timecontainer timeright" data-aos="flip-right">
-                        <div class="timecontent" >
-                            <h2 class="px-5 py-4 mb-3 blue darken-3 white-text rounded-top">Polling Day</h2>
-                            <p class="pb-4 pl-5 pr-5">
-                                On the day of voting polling stations will be opened up, there will typically be many different polling stations within a constituency, so you'll need to 
-                                keep an eye on local news to find out which one is the nearest one to you. These polling stations are open from early in the morning to late at night, meaning there 
-                                should be a chance for you to cast your vote regardless of what you are doing in the day. The process inside a polling station is to simply have your name ticked off as 
-                                attending, and then to complete a ballot paper and put it in a ballot box.
-                            </p>
-                        </div>
-                    </div>  
-                    <!-- Left side timeline item -->
-                    <div class="timecontainer timeleft" data-aos="flip-left">
-                        <div class="timecontent" >
-                            <h2 class="px-5 py-4 mb-3 blue darken-3 white-text rounded-top">Results Counted</h2>
-                            <p class="pb-4 pl-5 pr-5">
-                                When ballot stations start closing the results are then taken to a counting station, where ballots from across the constituency are also gathered up. The results 
-                                are then tallied and once all votes are counted the constituency will report it's election result.
-                            </p>
-                        </div>
-                    </div> 
-                    <!-- Right side timeline item -->
-                    <div class="timecontainer timeright" data-aos="flip-right">
-                        <div class="timecontent" >
-                            <h2 class="px-5 py-4 mb-3 blue darken-3 white-text rounded-top">Results Declared</h2>
-                            <p class="pb-4 pl-5 pr-5">
-                                Throughout the night constituencies will announce their results, allowing media to build up a picture of the way the election is heading. Generally, once a certain number 
-                                of constituencies have annoucned their results it becomes fairly clear which party will be able to form a government.
-                            </p>
-                        </div>
-                    </div>   
-                    <!-- Left side timeline item -->
-                    <div class="timecontainer timeleft" data-aos="flip-left">
-                        <div class="timecontent" >
-                            <h2 class="px-5 py-4 mb-3 blue darken-3 white-text rounded-top">Government formed</h2>
-                            <p class="pb-4 pl-5 pr-5">
-                                Once all the results are tallied, then the leading parties with the most number of constituencies (and therefore seats) will go on to form a government. They will either need to hold
-                                complete control to do this (more than half the seats, 326) or form a coalition government as has been the case a few times in the past. From here it's up to you, the voter, to judge how 
-                                well the party performs for the next election.
-                            </p>
-                        </div>
-                    </div>  
-                    <!-- End of timeline items -->     
                 </div>
+                <!-- A right side timeline item, animates in from the left is only difference to a right side one, pattern repeats for all other right side timeline items -->
+                <div class="timecontainer timeright" data-aos="flip-right">
+                    <div class="timecontent">
+                        <h2 class="px-5 py-4 mb-3 blue darken-3 white-text rounded-top">Date announced</h2>
+                        <p class="pb-4 pl-5 pr-5">
+                            At the same time as an election being declared, or shortly afterwards, the date that voting
+                            takes place on will be announced. This is the important
+                            date to remember; unless you are voting by mail, it is the only day you will be able to cast
+                            your ballot on.
+                        </p>
+                    </div>
+                </div>
+                <!-- Left side timeline item -->
+                <div class="timecontainer timeleft" data-aos="flip-left">
+                    <div class="timecontent">
+                        <h2 class="px-5 py-4 mb-3 blue darken-3 white-text rounded-top">Campaigning</h2>
+                        <p class="pb-4 pl-5 pr-5">
+                            Next a period of campaigning will follow from the parties vying for seats and power within
+                            the next government. This typically occurs in the form of
+                            election promises and an "election manifesto", we recommend taking a brief read on the
+                            highlights from the manifesto's that the parties put forward, as this
+                            is the best way to get an unfiltered look into what each party is promising. This
+                            campainging can take place up until a week before the election date.
+                        </p>
+                    </div>
+                </div>
+                <!-- Right side timeline item -->
+                <div class="timecontainer timeright" data-aos="flip-right">
+                    <div class="timecontent">
+                        <h2 class="px-5 py-4 mb-3 blue darken-3 white-text rounded-top">Polling Day</h2>
+                        <p class="pb-4 pl-5 pr-5">
+                            On the day of voting polling stations will be opened up, there will typically be many
+                            different polling stations within a constituency, so you'll need to
+                            keep an eye on local news to find out which one is the nearest one to you. These polling
+                            stations are open from early in the morning to late at night, meaning there
+                            should be a chance for you to cast your vote regardless of what you are doing in the day.
+                            The process inside a polling station is to simply have your name ticked off as
+                            attending, and then to complete a ballot paper and put it in a ballot box.
+                        </p>
+                    </div>
+                </div>
+                <!-- Left side timeline item -->
+                <div class="timecontainer timeleft" data-aos="flip-left">
+                    <div class="timecontent">
+                        <h2 class="px-5 py-4 mb-3 blue darken-3 white-text rounded-top">Results Counted</h2>
+                        <p class="pb-4 pl-5 pr-5">
+                            When ballot stations start closing the results are then taken to a counting station, where
+                            ballots from across the constituency are also gathered up. The results
+                            are then tallied and once all votes are counted the constituency will report it's election
+                            result.
+                        </p>
+                    </div>
+                </div>
+                <!-- Right side timeline item -->
+                <div class="timecontainer timeright" data-aos="flip-right">
+                    <div class="timecontent">
+                        <h2 class="px-5 py-4 mb-3 blue darken-3 white-text rounded-top">Results Declared</h2>
+                        <p class="pb-4 pl-5 pr-5">
+                            Throughout the night constituencies will announce their results, allowing media to build up
+                            a picture of the way the election is heading. Generally, once a certain number
+                            of constituencies have annoucned their results it becomes fairly clear which party will be
+                            able to form a government.
+                        </p>
+                    </div>
+                </div>
+                <!-- Left side timeline item -->
+                <div class="timecontainer timeleft" data-aos="flip-left">
+                    <div class="timecontent">
+                        <h2 class="px-5 py-4 mb-3 blue darken-3 white-text rounded-top">Government formed</h2>
+                        <p class="pb-4 pl-5 pr-5">
+                            Once all the results are tallied, then the leading parties with the most number of
+                            constituencies (and therefore seats) will go on to form a government. They will either need
+                            to hold
+                            complete control to do this (more than half the seats, 326) or form a coalition government
+                            as has been the case a few times in the past. From here it's up to you, the voter, to judge
+                            how
+                            well the party performs for the next election.
+                        </p>
+                    </div>
+                </div>
+                <!-- End of timeline items -->
             </div>
-             <!-- Timeline section end -->
+        </div>
+        <!-- Timeline section end -->
 
-            <!-- Content seperator parallax -->
-            <!-- Image changed via inline styling -->
-            <div class="parallax" style="background-image: url(../Images/London-BigBen.jpg);">
-                <!-- Mask applied for image readability -->
-                <div class="mask rgba-black-strong flex-center">
-                    <!-- Content -->
-                    <div class="container text-center white-text">
-                        <div class="white-text text-center" data-aos="fade-up">
-                            <h1 class="font-weight-bold">First past the post and constituencies</h1>
-                            <br>
-                            <i class="fa fa-angle-double-down fa-5x"></i>
-                        </div>
+        <!-- Content seperator parallax -->
+        <!-- Image changed via inline styling -->
+        <div class="parallax" style="background-image: url(../Images/London-BigBen.jpg);">
+            <!-- Mask applied for image readability -->
+            <div class="mask rgba-black-strong flex-center">
+                <!-- Content -->
+                <div class="container text-center white-text">
+                    <div class="white-text text-center" data-aos="fade-up">
+                        <h1 class="font-weight-bold">First past the post and constituencies</h1>
+                        <br>
+                        <i class="fa fa-angle-double-down fa-5x"></i>
+                    </div>
+                </div>
+                <!-- Content end -->
+            </div>
+        </div>
+        <!-- Content seperator parallax end -->
+
+        <!-- FPTP and constituencies explained section -->
+        <!-- Container and top/bottom padding set -->
+        <div class="container my-5">
+            <!-- Row set -->
+            <div class="row">
+                <!-- Column set -->
+                <div class="col-md-12">
+                    <!-- Animation set -->
+                    <div data-aos="fade-up">
+                        <!-- Content start -->
+                        <h2 class="font-weight-bold">How the voting system works.</h2>
+                        <br>
+                        <p>
+                            Within the UK, we use a system called First Past the Post, which you can read about in more
+                            detail on <a href="https://en.wikipedia.org/wiki/First-past-the-post_voting"
+                                target="blank">this wikipedia page about FPTP voting</a>.
+                            Esentially, with FPTP it is a "winner takes all" type of system, within each local
+                            constituency there can only be one winner, and the other votes that are cast end up not
+                            counting towards gaining
+                            their party any political power. This system means that elections are decided strongly by
+                            local effects, there are "safe" seats which are unlikely to change hands while other seats
+                            are hotly contested.
+                        </p>
+                        <br>
+                        <p>
+                            This has an unfortunate effect, in that votes from some constituencies matter more than
+                            others do, there is a lot of debate that surrounds the FPTP system and if it is really fair
+                            or
+                            holds up in modern times. Proponents for electoral reform have proposed systems such a
+                            "Single Transferable Vote", which you can read more about on the <a
+                                href="https://www.electoral-reform.org.uk/voting-systems/types-of-voting-system/single-transferable-vote/"
+                                target="blank">electoral reform society website</a>
+                        </p>
+                        <br>
+                        <p>
+                            As interesting as electoral reform could be, this is not what this website is about. FPTP is
+                            the system that we have, and at least for now, needs to be worked with. The important thing
+                            is
+                            to be well informed on the issues in your constituency and to vote for candidates that
+                            represent your areas views the best, this is where the idea of tactial voting needs to be
+                            introduced. You can read
+                            more about what <a href="https://en.wikipedia.org/wiki/Tactical_voting"></a>tactical voting
+                            is here</a>, but essentially it means that you sometimes vote for a party that may not be
+                            your best choice.
+                            For example, if Party A is your favourite but doesn't stand a chance of winning against your
+                            least favourite party in your area, Party B, but Party C does stand a decent chance then you
+                            could vote for Party C in
+                            order to prevent Party B winning in your area.
+                        </p>
+                        <p class="mb-5">
+                            Due to the importance of constituencies to our elections, I'd recommend using this link
+                            to <a href="https://beta.parliament.uk/find-your-constituency">find out what constituency
+                                you live in</a>. The graphic below givess a general overview in the way that
+                            constituencies are laid out in the UK, they are usually divided by population rather than
+                            county lines,
+                            in an effort to ensure a balance between the different areas. This results in dense
+                            population areas in cities having many more electoral zones, as can be seen on the map.
+                        </p>
                     </div>
                     <!-- Content end -->
-                </div>
-            </div>
-            <!-- Content seperator parallax end -->
-
-            <!-- FPTP and constituencies explained section -->
-            <!-- Container and top/bottom padding set -->
-            <div class="container my-5">
-                <!-- Row set -->
-                <div class="row">
-                    <!-- Column set -->
-                    <div class="col-md-12">
-                        <!-- Animation set -->
-                        <div data-aos="fade-up">
-                            <!-- Content start -->
-                            <h2 class="font-weight-bold">How the voting system works.</h2>
-                            <br>
-                            <p>
-                                Within the UK, we use a system called First Past the Post, which you can read about in more detail on <a href="https://en.wikipedia.org/wiki/First-past-the-post_voting" target="blank">this wikipedia page about FPTP voting</a>. 
-                                Esentially, with FPTP it is a "winner takes all" type of system, within each local constituency there can only be one winner, and the other votes that are cast end up not counting towards gaining 
-                                their party any political power. This system means that elections are decided strongly by local effects, there are "safe" seats which are unlikely to change hands while other seats 
-                                are hotly contested.
-                            </p>
-                            <br>
-                            <p>
-                                This has an unfortunate effect, in that votes from some constituencies matter more than others do, there is a lot of debate that surrounds the FPTP system and if it is really fair or 
-                                holds up in modern times. Proponents for electoral reform have proposed systems such a "Single Transferable Vote", which you can read more about on the <a href="https://www.electoral-reform.org.uk/voting-systems/types-of-voting-system/single-transferable-vote/" target="blank">electoral reform society website</a>
-                            </p>
-                            <br>
-                            <p>
-                                As interesting as electoral reform could be, this is not what this website is about. FPTP is the system that we have, and at least for now, needs to be worked with. The important thing is 
-                                to be well informed on the issues in your constituency and to vote for candidates that represent your areas views the best, this is where the idea of tactial voting needs to be introduced. You can read 
-                                more about what <a href="https://en.wikipedia.org/wiki/Tactical_voting"></a>tactical voting is here</a>, but essentially it means that you sometimes vote for a party that may not be your best choice. 
-                                For example, if Party A is your favourite but doesn't stand a chance of winning against your least favourite party in your area, Party B, but Party C does stand a decent chance then you could vote for Party C in 
-                                order to prevent Party B winning in your area.
-                            </p>
-                            <p class="mb-5">
-                                Due to the importance of constituencies to our elections, I'd recommend using this link
-                                to <a href="https://beta.parliament.uk/find-your-constituency">find out what constituency you live in</a>. The graphic below givess a general overview in the way that constituencies are laid out in the UK, they are usually divided by population rather than county lines, 
-                                in an effort to ensure a balance between the different areas. This results in dense population areas in cities having many more electoral zones, as can be seen on the map.
-                            </p>
-                        </div>
+                    <!-- Animation set -->
+                    <div data-aos="fade-up">
+                        <!-- Image -->
+                        <img src="../Images/UK_constituencies.jpg" alt="UK constituencies map" class="img-fluid mb-3">
+                    </div>
+                    <!-- Animation set -->
+                    <div data-aos="fade-up">
+                        <!-- Content -->
+                        <h3 class="font-weight-bold">Your vote matters in your area</h3>
+                        <p class="mt-5">
+                            It is argued by many that in the grand scheme, your vote doesn't matter. This couldn't be
+                            further from the truth, due to the quirks of FPTP instead of your vote being one of 30
+                            million, it is in fact
+                            one of 70,000. Due to your vote, and who you cast your ballot in favour of, mattering
+                            towards your local constituencies result your vote can be extremely powerful as local
+                            constituencies are often decided by
+                            a few hundred votes or less. You also need to think in terms of all the other voters who
+                            don't cast thier ballot, if all these people voted then it would cause hugely different
+                            results in some constituencies. In short; don't
+                            underestimate the power of your vote.
+                        </p>
                         <!-- Content end -->
-                        <!-- Animation set -->
-                        <div data-aos="fade-up">
-                            <!-- Image -->
-                            <img src="../Images/UK_constituencies.jpg" alt="UK constituencies map" class="img-fluid mb-3">
-                        </div>
-                        <!-- Animation set -->
-                        <div data-aos="fade-up">
-                            <!-- Content -->
-                            <h3 class="font-weight-bold">Your vote matters in your area</h3>
-                            <p class="mt-5">
-                                It is argued by many that in the grand scheme, your vote doesn't matter. This couldn't be further from the truth, due to the quirks of FPTP instead of your vote being one of 30 million, it is in fact 
-                                one of 70,000. Due to your vote, and who you cast your ballot in favour of, mattering towards your local constituencies result your vote can be extremely powerful as local constituencies are often decided by 
-                                a few hundred votes or less. You also need to think in terms of all the other voters who don't cast thier ballot, if all these people voted then it would cause hugely different results in some constituencies. In short; don't 
-                                underestimate the power of your vote.
-                            </p>
-                            <!-- Content end -->
-                        </div>
                     </div>
                 </div>
             </div>
-            <!-- FPTP and constituencies explained section end -->
+        </div>
+        <!-- FPTP and constituencies explained section end -->
 
-            <!-- Content Divider Parallax -->
-            <!-- Image changed with inline styling -->
-            <div class="parallax" style="background-image: url(../Images/city-of-london.jpg);">
-                <!-- Mask set for text readability -->
-                <div class="mask rgba-black-strong flex-center">
-                    <!-- Content -->
-                    <div class="container text-center white-text">
-                        <div class="white-text text-center" data-aos="fade-up">
-                            <h1 class="font-weight-bold">Want to learn more?</h1>
-                            <br>
-                            <i class="fa fa-angle-double-down fa-5x"></i>
-                        </div>
+        <!-- Content Divider Parallax -->
+        <!-- Image changed with inline styling -->
+        <div class="parallax" style="background-image: url(../Images/city-of-london.jpg);">
+            <!-- Mask set for text readability -->
+            <div class="mask rgba-black-strong flex-center">
+                <!-- Content -->
+                <div class="container text-center white-text">
+                    <div class="white-text text-center" data-aos="fade-up">
+                        <h1 class="font-weight-bold">Want to learn more?</h1>
+                        <br>
+                        <i class="fa fa-angle-double-down fa-5x"></i>
+                    </div>
+                </div>
+                <!-- End of content -->
+            </div>
+        </div>
+        <!-- Content Divider Parallax end -->
+
+        <!-- Where to go from here section -->
+        <!-- Container and top margin set -->
+        <div class="container mt-5">
+            <!-- Row set -->
+            <div class="row">
+                <!-- Column set -->
+                <div class="col-md-12">
+                    <!-- Animation set -->
+                    <div data-aos="fade-up">
+                        <!-- Content -->
+                        <h2 class="font-weight-bold"> Follow one of these links to continue exploring Poll </h2>
+                        <br>
+                        <p class="mb-5">
+                            Next we recommend reading about the main political parties in the UK, and what they stand
+                            for, and then would recommend taking a quick read of the "Who can vote?" page
+                            so you can see the reasons why some are legally not allowed to vote.
+                        </p>
                     </div>
                     <!-- End of content -->
                 </div>
             </div>
-            <!-- Content Divider Parallax end -->
+        </div>
 
-            <!-- Where to go from here section -->
-            <!-- Container and top margin set -->
-            <div class="container mt-5">
-                <!-- Row set -->
-                <div class="row">
-                    <!-- Column set -->
-                    <div class="col-md-12">
-                        <!-- Animation set -->
-                        <div data-aos="fade-up">
-                            <!-- Content -->
-                            <h2 class="font-weight-bold"> Follow one of these links to continue exploring Poll </h2>
-                                <br>
-                                <p class="mb-5">
-                                    Next we recommend reading about the main political parties in the UK, and what they stand for, and then would recommend taking a quick read of the "Who can vote?" page 
-                                    so you can see the reasons why some are legally not allowed to vote.
+        <!-- "Link" cards -->
+        <div class="container mb-5" id="element3" data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-3">
+                    <!-- Political Parties Card -->
+                    <div class="card card-img-top rounded h-100"
+                        style="background-image: url(../Images/UK_Political_Parties.jpg);">
+
+                        <!-- Content -->
+                        <div
+                            class="text-white text-center d-flex align-items-stretch rgba-black-strong py-5 px-4 rounded h-100">
+                            <div>
+                                <h3 class="card-title pt-2"><strong>Political Parties</strong></h3>
+                                <p>
+                                    Follow the below link to learn more about the parties you can vote for and what they
+                                    stand for.
                                 </p>
+                                <a class="btn btn-indigo" href="../Pages/political_parties.html"><i
+                                        class="fa fa-clone left"></i> View page</a>
                             </div>
-                            <!-- End of content -->
                         </div>
+                        <!-- Content -->
                     </div>
+                    <!-- Card -->
                 </div>
+                <div class="col-lg-6 col-md-12 mb-3">
+                    <!-- Voting System Card -->
+                    <div class="card card-img-top rounded h-100" style="background-image: url(../Images/People.jpg);">
 
-                <!-- "Link" cards -->
-                <div class="container mb-5" id="element3" data-aos="fade-up">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-12 mb-3">
-                            <!-- Political Parties Card -->
-                                <div class="card card-img-top rounded h-100" style="background-image: url(../Images/UK_Political_Parties.jpg);">
-            
-                                    <!-- Content -->
-                                    <div class="text-white text-center d-flex align-items-stretch rgba-black-strong py-5 px-4 rounded h-100">
-                                        <div>
-                                            <h3 class="card-title pt-2"><strong>Political Parties</strong></h3>
-                                            <p>
-                                                Follow the below link to learn more about the parties you can vote for and what they stand for.
-                                            </p>
-                                            <a class="btn btn-indigo" href="../Pages/political_parties.html"><i class="fa fa-clone left"></i> View page</a>
-                                        </div>
-                                    </div>
-                                    <!-- Content -->
-                                </div>
-                            <!-- Card -->
+                        <!-- Content -->
+                        <div
+                            class="text-white text-center d-flex align-items-stretch rgba-black-strong py-5 px-4 rounded h-100">
+                            <div>
+                                <h3 class="card-title pt-2"><strong>Who can vote?</strong></h3>
+                                <p>
+                                    Follow the below link to learn more about who is allowed to vote and where you can
+                                    vote.
+                                </p>
+                                <a class="btn btn-indigo" href="../Pages/Who_Can_Vote.html"><i
+                                        class="fa fa-clone left"></i> View page</a>
+                            </div>
                         </div>
-                        <div class="col-lg-6 col-md-12 mb-3">
-                            <!-- Voting System Card -->
-                                <div class="card card-img-top rounded h-100" style="background-image: url(../Images/People.jpg);">
-            
-                                    <!-- Content -->
-                                        <div class="text-white text-center d-flex align-items-stretch rgba-black-strong py-5 px-4 rounded h-100">
-                                            <div>
-                                                <h3 class="card-title pt-2"><strong>Who can vote?</strong></h3>
-                                                <p>
-                                                    Follow the below link to learn more about who is allowed to vote and where you can vote.
-                                                </p>
-                                                <a class="btn btn-indigo" href="../Pages/Who_Can_Vote.html"><i class="fa fa-clone left"></i> View page</a>
-                                            </div>
-                                        </div>
-                                    <!-- Content -->
-                                </div>
-                            <!-- Card -->
-                        </div>
+                        <!-- Content -->
                     </div>
+                    <!-- Card -->
                 </div>
+            </div>
+        </div>
 
-                <!-- Where to go from here section end-->
+        <!-- Where to go from here section end-->
     </main>
     <!-- End of main content -->
     <!-- Button to return to top -->
-    <a onclick="topFunction()" id="ToTopButton" class="btn btn-elegant"><i class="fa fa-arrow-up left"></i> Return to top</a>
+    <a onclick="topFunction()" id="ToTopButton" class="btn btn-elegant"><i class="fa fa-arrow-up left"></i> Return to
+        top</a>
 
     <footer class="page-footer font-small blue darken-3">
         <!-- Footer -->
-            <!-- Footer Elements -->
-                <div class="container">
-                    <!-- Grid row-->
-                    <div class="row">
-                        <!-- Grid column -->
-                        <div class="col-md-12 py-5">
-                            <div class="mb-3 flex-center">
-                                <!-- Facebook -->
-                                <a class="git-ic" href="#" target="_blank" rel="noopener noreferrer">
-                                    <i class="fa fa-facebook-square white-text mx-md-4 mx-4 fa-2x"> </i>
-                                </a>
-                                <!-- Twitter -->
-                                <a class="gplus-ic" href="#" target="_blank" rel="noopener noreferrer">
-                                    <i class="fa fa-twitter-square white-text mx-md-4 mx-4 fa-2x"></i>
-                                </a>
-                                <!-- Reddit -->
-                                <a class="li-ic" href="" target="_blank" rel="noopener noreferrer">
-                                    <i class="fa fa-reddit white-text mx-md-3 mx-4 fa-2x"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-12 py-2">
-                            <div class="footer-copyright mb-2 text-center"> With thanks to
-                                <a href="https://www.parliament.uk/">Parliament.uk</a>
-                            </div>
-                        </div>
-                        <!-- Grid column -->
+        <!-- Footer Elements -->
+        <div class="container">
+            <!-- Grid row-->
+            <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-12 py-5">
+                    <div class="mb-3 flex-center">
+                        <!-- Facebook -->
+                        <a class="git-ic" href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="fa fa-facebook-square white-text mx-md-4 mx-4 fa-2x"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="gplus-ic" href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="fa fa-twitter-square white-text mx-md-4 mx-4 fa-2x"></i>
+                        </a>
+                        <!-- Reddit -->
+                        <a class="li-ic" href="" target="_blank" rel="noopener noreferrer">
+                            <i class="fa fa-reddit white-text mx-md-3 mx-4 fa-2x"></i>
+                        </a>
                     </div>
-                    <!-- Grid row-->
                 </div>
-            <!-- Footer Elements -->
+                <div class="col-md-12 py-2">
+                    <div class="footer-copyright mb-2 text-center"> With thanks to
+                        <a href="https://www.parliament.uk/">Parliament.uk</a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row-->
+        </div>
+        <!-- Footer Elements -->
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">Website created by Jake Hall, follow the link for my portfolio page:
+        <div class="footer-copyright text-center py-3">Website created by Jake Hall, follow the link for my portfolio
+            page:
             <a href="https://diedinium.github.io/JakeHallPortfolio/"> My Portfolio site</a>
         </div>
-        <!-- Copyright --> 
-                <!-- JQuery -->
-                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-                <!-- Bootstrap tooltips -->
-                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-                <!-- Bootstrap core JavaScript -->
-                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
-                <!-- MDB core JavaScript -->
-                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.16/js/mdb.min.js"></script>
-                <!-- Main self made script -->
-                <script src="../script.js"></script>
+        <!-- Copyright -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.16/js/mdb.min.js"></script>
+        <!-- Main self made script -->
+        <script src="../script.js"></script>
     </footer>
-        <!-- Linking in AOS script source -->
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <!-- Initialising the AOS script, with some customised settings -->
-        <script>
-            AOS.init({
-                duration: 500,
-                once: true,
-                anchorPlacement: 'top-bottom',
-            });
-        </script>
+    <!-- Linking in AOS script source -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Initialising the AOS script, with some customised settings -->
+    <script>
+        AOS.init({
+            duration: 500,
+            once: true,
+            anchorPlacement: 'top-bottom',
+        });
+    </script>
 </body>
+
 </html>
